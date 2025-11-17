@@ -6,6 +6,10 @@ public class Filme extends Titulo implements Classificacao {
     private String diretor;
     private int duracaoEmMinutos;
 
+    public Filme(String nome, int anoDeLancamento) {
+        super(nome, anoDeLancamento);
+    }
+
     public String getDiretor() {
         return diretor;
     }
@@ -25,5 +29,10 @@ public class Filme extends Titulo implements Classificacao {
     @Override
     public int getClassificacao() {
         return (int) retornaMedia() / 2;
+    }
+
+    @Override
+    public String toString() {
+        return "Filme: " +  this.getNome() + " (" + this.getAnoDeLancamento() + ")";
     }
 }
