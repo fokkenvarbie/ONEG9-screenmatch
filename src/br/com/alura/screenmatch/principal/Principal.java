@@ -18,7 +18,7 @@ public class Principal {
         alice.avalia(8);
         alice.avalia(7);
         System.out.println("Total de avaliações: " + alice.getTotalDeAvaliacoes());
-        System.out.println("Média das avaliações: " + alice.retornaMedia());
+        System.out.println("Média das avaliações: " + alice.pegaMedia());
 
         Filme coraline = new Filme("Coraline e o Mundo Secreto", 2009);
         coraline.setDuracaoEmMinutos(100);
@@ -29,7 +29,7 @@ public class Principal {
         coraline.avalia(8);
         coraline.avalia(10);
         System.out.println("Total de avaliações: " + coraline.getTotalDeAvaliacoes());
-        System.out.println("Média das avaliações: " + coraline.retornaMedia());
+        System.out.println("Média das avaliações: " + coraline.pegaMedia());
 
         Serie gameOfThrones = new Serie("Game of Thrones", 2011);
         gameOfThrones.setTemporadas(8);
@@ -46,7 +46,7 @@ public class Principal {
         gameOfThrones.avalia(8);
         gameOfThrones.avalia(10);
         System.out.println("Total de avaliações: " + gameOfThrones.getTotalDeAvaliacoes());
-        System.out.println("Média das avaliações: " + gameOfThrones.retornaMedia());
+        System.out.println("Média das avaliações: " + gameOfThrones.pegaMedia());
 
 
         CalculadoraMaratona calculadora = new CalculadoraMaratona();

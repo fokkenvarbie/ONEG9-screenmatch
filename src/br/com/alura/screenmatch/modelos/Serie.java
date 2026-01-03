@@ -1,8 +1,8 @@
 package br.com.alura.screenmatch.modelos;
 
-import br.com.alura.screenmatch.calculos.Classificacao;
+import br.com.alura.screenmatch.calculos.Classificavel;
 
-public class Serie extends Titulo implements Classificacao {
+public class Serie extends Titulo implements Classificavel {
     private int temporadas;
     private boolean ativa;
     private int episodiosPorTemporada;
@@ -51,7 +51,7 @@ public class Serie extends Titulo implements Classificacao {
 
     @Override
     public int getClassificacao() {
-        return (int) retornaMedia() / 2;
+        return (int) pegaMedia() / 2;
     }
 
     @Override
