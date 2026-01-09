@@ -1,9 +1,10 @@
-<h1>Screenmatch 2</h1>
+<h1>Screenmatch</h1>
 
-Um programa em Java que integra uma API externa para busca de filmes e séries, permitindo consultar títulos reais, calcular média de avaliações e estimar o tempo total necessário para maratonar suas produções favoritas. O sistema organiza informações obtidas da API e exibe tudo de forma estruturada no terminal.
+Um programa em Java que simula um catálogo de filmes e séries, permitindo calcular média de avaliações e tempo total necessário para maratonar suas produções favoritas. O sistema organiza informações sobre títulos, avaliações e duração, exibindo tudo de forma estruturada no terminal. 
 
 - **Funcionalidades:**
-  - **Busca de filmes e séries via API:** Permite pesquisar filmes e séries em uma API externa, retornando dados atualizados das produções.
-  - **Ficha técnica:** Exibe nome, direção, ano de lançamento e duração. No caso das séries, as informações podem ser passadas por obra, temporada ou episódio.
-  - **Interação via terminal:** Exibe um menu interativo no console, permitindo que o usuário realize buscas e visualize os resultados desejados.
+  - **Cadastro de filmes e séries:** Armazena uma ficha técnica para cada uma das produções.
+  - **Ficha técnica:** Exibe nome, direção, ano de lançamento e duração. No caso das séries, calcula automaticamente o tempo total com base em temporadas, episódios e minutos por episódio.
+  - **Sistema de avaliações:** Permite registrar múltiplas notas e calcula a média automaticamente. - **Cálculo de maratona:** Soma a duração total de todos os títulos adicionados (filmes e séries), exibindo quanto tempo o usuário precisaria para assistir tudo.
+  - **Organização orientada a objetos:** Utiliza herança e sobrescrita de métodos para diferenciar o comportamento entre filmes e séries.
   - **Saída estruturada:** Todos os resultados e informações são exibidos diretamente no console, de forma clara e interativa.
